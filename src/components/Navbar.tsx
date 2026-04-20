@@ -12,6 +12,7 @@ const links = [
   { to: "/booking", label: "Booking" },
   { to: "/peer", label: "Peer Support" },
   { to: "/resources", label: "Resources" },
+  { to: "/admin", label: "Admin" },
 ];
 
 export const Navbar = () => {
