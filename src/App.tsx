@@ -12,6 +12,7 @@ import Screening from "./pages/Screening";
 import Booking from "./pages/Booking";
 import Peer from "./pages/Peer";
 import Resources from "./pages/Resources";
+import Admin from "./pages/Admin";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,6 +32,7 @@ const App = () => (
             <Route path="/peer" element={<Peer />} />
             <Route path="/screening" element={<RequireAuth><Screening /></RequireAuth>} />
             <Route path="/booking" element={<RequireAuth><Booking /></RequireAuth>} />
+            <Route path="/admin" element={<RequireAuth><Admin /></RequireAuth>} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
