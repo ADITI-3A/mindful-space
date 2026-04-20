@@ -17,7 +17,7 @@ const fade = (i = 0) => ({
   initial: { opacity: 0, y: 20 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true, margin: "-50px" },
-  transition: { duration: 0.6, delay: i * 0.08, ease: [0.4, 0, 0.2, 1] },
+  transition: { duration: 0.6, delay: i * 0.08, ease: "easeOut" as const },
 });
 
 const Index = () => {
